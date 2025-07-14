@@ -1,0 +1,6 @@
+langchain>=0.2
+langchain-community
+faiss-cpu
+pypdf
+sentence-transformers>=2.2.2
+aiohttp==3.8.6

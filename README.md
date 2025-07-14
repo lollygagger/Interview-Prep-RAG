@@ -9,14 +9,8 @@ This is a lightweight Retrieval-Augmented Generation (RAG) chatbot that runs **e
 - Local PDF ingestion
 - Text chunking & semantic search (FAISS + Sentence Transformers)
 - Answers questions using a local LLM like `llama3` or `mistral` via Ollama
-- CLI interface — simple and fast
+- CLI interface
 
-
-## Running the Chatbot
-
-```bash
-python main.py
-```
 
 ## Built With
 - **LangChain** v0.2+
@@ -25,16 +19,6 @@ python main.py
 - **Sentence Transformers** (`all-MiniLM-L6-v2`) for embeddings
 - **Ollama** for running LLMs locally
 - **PyPDF** for parsing PDFs
-
-## Project Structure
-
-Project folder layout:
-
-- `main.py` — main script
-- `RAG.py` — helper methods for setting up RAG
-- `requirements.txt` — dependency list
-- `README.md` — this file
-- `pdfs/` — place your prep PDFs here (e.g., `leadership.pdf`, `system_design.pdf`)
 
 ---
 
@@ -59,6 +43,14 @@ Project folder layout:
     ```bash
     pip install -r requirements.txt
     ```
+
+---
+
+## Running the Chatbot
+
+```bash
+python main.py
+```
 
 ---
 

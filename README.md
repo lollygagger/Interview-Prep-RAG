@@ -1,10 +1,10 @@
-# 🧠 Interview Prep Assistant (Local RAG Chatbot)
+# Interview Prep Assistant (Local RAG Chatbot)
 
 This is a lightweight Retrieval-Augmented Generation (RAG) chatbot that runs **entirely locally** using your interview prep PDFs. It uses a vector database + local LLM (via [Ollama](https://ollama.com)) to answer questions about interview material.
 
 ---
 
-## 🔧 Features
+## Features
 
 - Local PDF ingestion
 - Text chunking & semantic search (FAISS + Sentence Transformers)
@@ -12,13 +12,13 @@ This is a lightweight Retrieval-Augmented Generation (RAG) chatbot that runs **e
 - CLI interface — simple and fast
 
 
-## 🚀 Running the Chatbot
+## Running the Chatbot
 
 ```bash
 python main.py
 ```
 
-## 🧱 Built With
+## Built With
 - **LangChain** v0.2+
 - **LangChain Community** for Ollama, FAISS, HuggingFace
 - **FAISS** for local vector search
@@ -26,7 +26,7 @@ python main.py
 - **Ollama** for running LLMs locally
 - **PyPDF** for parsing PDFs
 
-## 📁 Project Structure
+## Project Structure
 
 Project folder layout:
 
@@ -38,7 +38,7 @@ Project folder layout:
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 1. **Clone the project** or download the files:
 
@@ -62,7 +62,7 @@ Project folder layout:
 
 ---
 
-## 🛠️ Setup Ollama
+## Setup Ollama
 
 Make sure [Ollama](https://ollama.com) is installed and running:
 

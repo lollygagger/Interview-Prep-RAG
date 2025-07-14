@@ -15,7 +15,7 @@ def load_and_split_pdfs(pdf_dir):
             print(f"Loading: {filename}")
             loader = PyPDFLoader(os.path.join(pdf_dir, filename))
             docs.extend(loader.load())
-    splitter = RecursiveCharacterTextSplitter(chunk_size=2500, chunk_overlap=400)
+    splitter = RecursiveCharacterTextSplitter(chunk_size=2500, chunk_overlap=400) #Larger chunk size & overlap for more context
     return splitter.split_documents(docs)
 
 def embed_documents(split_docs):
@@ -28,7 +28,7 @@ def setup_rag_chain(vectorstore):
     llm = OllamaLLM(model="llama3")
     chain = RetrievalQA.from_chain_type(
         llm=llm,
-        retriever=vectorstore.as_retriever(),
+        retriever=vectorstore.as_retriever(), #In the future will probably want to manually set k value for optimization
         chain_type="stuff"
     )
     return chain

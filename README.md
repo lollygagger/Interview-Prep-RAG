@@ -1,6 +1,6 @@
-# 🧠 Amazon Interview Prep Assistant (Local RAG Chatbot)
+# 🧠 Interview Prep Assistant (Local RAG Chatbot)
 
-This is a lightweight Retrieval-Augmented Generation (RAG) chatbot that runs **entirely locally** using your Amazon prep PDFs. It uses a vector database + local LLM (via [Ollama](https://ollama.com)) to answer questions about interview material.
+This is a lightweight Retrieval-Augmented Generation (RAG) chatbot that runs **entirely locally** using your interview prep PDFs. It uses a vector database + local LLM (via [Ollama](https://ollama.com)) to answer questions about interview material.
 
 ---
 
@@ -43,8 +43,8 @@ Project folder layout:
 1. **Clone the project** or download the files:
 
     ```bash
-    git clone https://github.com/lollygagger/amazon-prep-rag.git
-    cd amazon-prep-rag
+    git clone https://github.com/lollygagger/interview-prep-rag.git
+    cd interview-prep-rag
     ```
 
 2. **(Optional)** Create a virtual environment:

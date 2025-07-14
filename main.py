@@ -1,7 +1,7 @@
 import RAG
 
 def main():
-    print("Setting up your local Amazon prep assistant...")
+    print("Setting up your local interview prep assistant...")
     split_docs = RAG.load_and_split_pdfs("./pdfs")
     vectorstore = RAG.embed_documents(split_docs)
     rag_chain = RAG.setup_rag_chain(vectorstore)
